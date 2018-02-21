@@ -1,0 +1,154 @@
+$font_size: 12px;
+$sticky_height: 160px;
+@import "font-awesome";	
+
+@function crem($size) {
+  $remSize: $size / $font_size;
+  @return #{$remSize}rem;
+}
+
+
+
+body{
+	font-size: $font_size;
+}
+.tritos{
+	background: #22a5df;
+	color: #ffffff;
+	background: url(../images/background.png);
+	background-size: cover;
+	margin-top: crem(60px);
+}
+
+a {
+	color: #ffffff;
+	
+}
+
+
+.logo{
+	background: url(../images/logo.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #0872ba;
+	text-stroke: 2px white;
+	-webkit-text-stroke: 2px white; 
+	font-size: crem(30px);
+	margin: crem(20px) 0 crem(20px) 0;
+	span{
+		color: #f1582b;
+	}
+}
+
+
+.heading {
+	background: url(../images/heading.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	height: 60px;
+	margin: crem(30px) 0 crem(30px) 0;
+}
+
+.box{
+	margin-bottom: 1rem;
+	&--rounded{
+		border-radius: 10px;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4)
+	}
+	.header{
+		border-radius: 10px 10px 0 0;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.box-title{
+	    font-size: 1.2rem;
+	}
+
+	&__facebook{
+		.header{
+			background: #3B5998;
+		}
+	}
+
+	&__twitter{
+		.header{
+			background: #1db2ff;
+		}
+	}
+
+	&__instagram{
+		.header{
+			background: #6b11d0;
+		}
+	}
+
+	.body{
+		min-height: 300px;
+		background: #fff;
+	}
+}
+
+.container{
+	&--relative{
+		position: relative;
+	}
+}
+
+.item {
+	position: absolute;
+	z-index: 1;
+	.figure{
+		width: 100%;
+	}
+	&__top-left{
+		top: 0;
+		left: 0;
+		width: 200px;
+	}
+
+	&__top-right{
+		top: 0;
+		right: 0;
+		width: 200px;
+	}
+
+	&__bottom-left{
+		bottom: 0;
+		left: 0;
+		width: 200px;
+	}
+
+	&__bottom-right{
+		bottom: 0;
+		right: 0;
+		width: 200px;
+	}
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: $sticky_height;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: $sticky_height;
+	line-height: 60px;
+	background: url(../images/product.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	
+}
