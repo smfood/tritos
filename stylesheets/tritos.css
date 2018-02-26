@@ -3836,59 +3836,66 @@ a {
 .box .body {
   min-height: 300px;
   background: #fff;
+  padding: 0.83333rem;
+}
+/* line 104, ../sass/tritos.scss */
+.box .body .content {
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* line 107, ../sass/tritos.scss */
+/* line 113, ../sass/tritos.scss */
 .container--relative {
   position: relative;
 }
 
-/* line 112, ../sass/tritos.scss */
+/* line 118, ../sass/tritos.scss */
 .item {
   position: absolute;
   z-index: 1;
 }
-/* line 115, ../sass/tritos.scss */
+/* line 121, ../sass/tritos.scss */
 .item .figure {
   width: 100%;
 }
-/* line 118, ../sass/tritos.scss */
+/* line 124, ../sass/tritos.scss */
 .item__top-left {
   top: 0;
   left: 0;
   width: 200px;
 }
-/* line 124, ../sass/tritos.scss */
+/* line 130, ../sass/tritos.scss */
 .item__top-right {
   top: 0;
   right: 0;
   width: 200px;
 }
-/* line 130, ../sass/tritos.scss */
+/* line 136, ../sass/tritos.scss */
 .item__bottom-left {
   bottom: 0;
   left: 0;
   width: 200px;
 }
-/* line 136, ../sass/tritos.scss */
+/* line 142, ../sass/tritos.scss */
 .item__bottom-right {
   bottom: 0;
   right: 0;
   width: 200px;
 }
 
-/* line 143, ../sass/tritos.scss */
+/* line 149, ../sass/tritos.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 147, ../sass/tritos.scss */
+/* line 153, ../sass/tritos.scss */
 body {
   margin-bottom: 160px;
 }
 
-/* line 150, ../sass/tritos.scss */
+/* line 156, ../sass/tritos.scss */
 .footer {
   position: absolute;
   bottom: 0;
