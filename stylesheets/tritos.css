@@ -3892,7 +3892,7 @@ html {
 
 /* line 153, ../sass/tritos.scss */
 body {
-  margin-bottom: 160px;
+  margin-bottom: 200px;
 }
 
 /* line 156, ../sass/tritos.scss */
@@ -3900,7 +3900,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 160px;
+  height: 200px;
   line-height: 60px;
   background: url(../images/product.png);
   background-position: center center;
